@@ -22,12 +22,13 @@ namespace F_Project
         }
         private void timer1_Tick(object sender, EventArgs e)
         {   
+            lbscore.Text = "Score : " + Run.score;
             PictureBox[] cars = { car1, car2, car3 };
             PictureBox[] lines = { L1, L2, L3, L4, L5, L6, L7, L8, L9 };
             Run.move_lines(lines, panalGame);
             Run.move_player(Player,panalGame);
             Run.move_car(cars,panalGame,Player);
-            lbscore.Text = "Score : " + Run.score;
+            Run.Game_difficulty();
             if (Run.check_accident(cars, Player))
             {
                 timeAction.Enabled = false;
@@ -35,7 +36,6 @@ namespace F_Project
                 Run=new Car_Racing(cars, timeAction,Player,panalGame);
                 timerwait.Enabled = true;
             }
-            Run.Game_difficulty();
             Run.score++;
         }
         private void timerwait_Tick(object sender, EventArgs e)
