@@ -19,7 +19,7 @@ namespace F_Project
             speed = 5;
             score = 0;
         }
-        public Car_Racing(PictureBox[] cars,Timer timerAction,PictureBox player,Panel panalGame)
+        public Car_Racing(PictureBox[] cars,PictureBox player)
         {
             player.Left = 255;
             cars[0].Left = 71;cars[0].Top = 154;

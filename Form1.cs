@@ -20,26 +20,9 @@ namespace F_Project
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
-        private void timer1_Tick(object sender, EventArgs e)
-        {   
-            lbscore.Text = "Score : " + Run.score;
-            PictureBox[] cars = { car1, car2, car3 };
-            PictureBox[] lines = { L1, L2, L3, L4, L5, L6, L7, L8, L9 };
-            Run.move_lines(lines, panalGame);
-            Run.move_player(Player,panalGame);
-            Run.move_car(cars,panalGame,Player);
-            Run.Game_difficulty();
-            if (Run.check_accident(cars, Player))
-            {
-                timeAction.Enabled = false;
-                labGameOver.Visible = true;
-                Run=new Car_Racing(cars, timeAction,Player,panalGame);
-                timerwait.Enabled = true;
-            }
-            Run.score++;
-        }
         private void timerwait_Tick(object sender, EventArgs e)
         {
+            labGameOver.Visible = true;
             lbwait.Visible = true;
             if (lbwait.ForeColor == Color.Black)
                 lbwait.ForeColor = Color.Red;
