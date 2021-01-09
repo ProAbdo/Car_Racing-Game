@@ -248,7 +248,7 @@
             // 
             this.timeAction.Enabled = true;
             this.timeAction.Interval = 15;
-            this.timeAction.Tick += new System.EventHandler(this.timeAction);
+            this.timeAction.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // lbwait
             // 
