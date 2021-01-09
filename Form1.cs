@@ -23,12 +23,12 @@ namespace F_Project
         private void timer1_Tick(object sender, EventArgs e)
         { 
             //timerAction  
+            lbscore.Text = "Score : " + Run.score;
             PictureBox[] cars = { car1, car2, car3 };
             PictureBox[] lines = { L1, L2, L3, L4, L5, L6, L7, L8, L9 };
             Run.move_lines(lines, panalGame);
             Run.move_player(Player,panalGame);
             Run.move_car(cars,panalGame);
-            lbscore.Text = "Score : " + Run.score;
             Run.Game_difficulty();
             if (Run.check_accident(cars, Player))
             {
