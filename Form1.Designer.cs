@@ -44,8 +44,8 @@
             this.L4 = new System.Windows.Forms.PictureBox();
             this.L6 = new System.Windows.Forms.PictureBox();
             this.L2 = new System.Windows.Forms.PictureBox();
-            this.L1 = new System.Windows.Forms.PictureBox();
             this.L3 = new System.Windows.Forms.PictureBox();
+            this.L1 = new System.Windows.Forms.PictureBox();
             this.timeAction = new System.Windows.Forms.Timer(this.components);
             this.lbwait = new System.Windows.Forms.Label();
             this.timerwait = new System.Windows.Forms.Timer(this.components);
@@ -63,8 +63,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.L4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.L6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.L2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.L1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.L3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.L1)).BeginInit();
             this.SuspendLayout();
             // 
             // panalGame
@@ -110,7 +110,7 @@
             // 
             this.Player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Player.Image = ((System.Drawing.Image)(resources.GetObject("Player.Image")));
-            this.Player.Location = new System.Drawing.Point(275, 437);
+            this.Player.Location = new System.Drawing.Point(269, 437);
             this.Player.Name = "Player";
             this.Player.Size = new System.Drawing.Size(45, 99);
             this.Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +122,7 @@
             // 
             this.car2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.car2.Image = global::F_Project.Properties.Resources.car4;
-            this.car2.Location = new System.Drawing.Point(334, 23);
+            this.car2.Location = new System.Drawing.Point(341, 23);
             this.car2.Name = "car2";
             this.car2.Size = new System.Drawing.Size(45, 99);
             this.car2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -225,6 +225,15 @@
             this.L2.TabIndex = 2;
             this.L2.TabStop = false;
             // 
+            // L3
+            // 
+            this.L3.BackColor = System.Drawing.Color.Black;
+            this.L3.Location = new System.Drawing.Point(85, 360);
+            this.L3.Name = "L3";
+            this.L3.Size = new System.Drawing.Size(10, 139);
+            this.L3.TabIndex = 0;
+            this.L3.TabStop = false;
+            // 
             // L1
             // 
             this.L1.BackColor = System.Drawing.Color.Gold;
@@ -235,20 +244,11 @@
             this.L1.TabStop = false;
             this.L1.Click += new System.EventHandler(this.L1_Click);
             // 
-            // L3
-            // 
-            this.L3.BackColor = System.Drawing.Color.Black;
-            this.L3.Location = new System.Drawing.Point(85, 360);
-            this.L3.Name = "L3";
-            this.L3.Size = new System.Drawing.Size(10, 139);
-            this.L3.TabIndex = 0;
-            this.L3.TabStop = false;
-            // 
             // timeAction
             // 
             this.timeAction.Enabled = true;
             this.timeAction.Interval = 15;
-            this.timeAction.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timeAction.Tick += new System.EventHandler(this.timeAction);
             // 
             // lbwait
             // 
@@ -307,8 +307,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.L4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.L6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.L2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.L1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.L3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.L1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
